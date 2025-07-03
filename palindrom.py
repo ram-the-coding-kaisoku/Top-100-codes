@@ -7,26 +7,15 @@ In simple terms, if you read the number forward or backward, it looks the same.
 
 #Brute Force
 
-#Function to get the count
-
-def getCount(n):
-    count=0
-    while n != 0:
-        count+=1
-        n//=10
-        print(count)
-    return int(count-1)
 
 # Function to check if a number is palindrome or not
 
 def Palindrome(n):
     num = n
-    reverse = 0
-    count=getCount(n) 
+    reverse=0
     while n !=0:
         digit = n % 10
-        reverse += (digit * (10 ** count))
-        count-=1
+        reverse = (reverse*10) + digit
         n//=10
     #check the if the number is palindrome or not 
     print(reverse)
