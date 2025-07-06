@@ -16,7 +16,7 @@ count=0
 
 
 '''
-#Iterative method
+
 #Function to count the digits of a number
 
 def count(num):
@@ -45,4 +45,3 @@ def arm(num):
 n=int(input("Enter the number"))
 print(arm(n))
 
-#Recursive method yet to be done
